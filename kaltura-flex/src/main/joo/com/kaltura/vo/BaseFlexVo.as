@@ -27,9 +27,9 @@
 // ===================================================================================================
 package com.kaltura.vo
 {
-	import mx.utils.ObjectProxy;
+	//import mx.utils.ObjectProxy;
 	
-	public dynamic class BaseFlexVo extends ObjectProxy
+	public dynamic class BaseFlexVo //extends ObjectProxy
 	{
 		private var _updatedFieldsOnly : Boolean = false;
 		private var _insertedFields : Boolean = false;

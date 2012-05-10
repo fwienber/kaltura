@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.flavorAsset
 {
-	import com.kaltura.vo.KalturaFlavorAssetWithParams;KalturaFlavorAssetWithParams;;
+	import com.kaltura.vo.KalturaFlavorAssetWithParams;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.flavorAsset
 
 	public class FlavorAssetGetFlavorAssetsWithParamsDelegate extends WebDelegateBase
 	{
+		KalturaFlavorAssetWithParams;
+
 		public function FlavorAssetGetFlavorAssetsWithParamsDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

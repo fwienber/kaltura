@@ -35,7 +35,7 @@ package com.kaltura.delegates.genericDistributionProviderAction
 	import com.kaltura.commands.genericDistributionProviderAction.GenericDistributionProviderActionAddMrssValidateFromFile;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

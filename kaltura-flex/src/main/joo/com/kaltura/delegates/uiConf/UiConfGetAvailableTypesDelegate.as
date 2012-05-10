@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.uiConf
 {
-	import com.kaltura.vo.KalturaUiConfTypeInfo;KalturaUiConfTypeInfo;;
+	import com.kaltura.vo.KalturaUiConfTypeInfo;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.uiConf
 
 	public class UiConfGetAvailableTypesDelegate extends WebDelegateBase
 	{
+		KalturaUiConfTypeInfo;
+
 		public function UiConfGetAvailableTypesDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

@@ -35,7 +35,7 @@ package com.kaltura.delegates.uploadToken
 	import com.kaltura.commands.uploadToken.UploadTokenUpload;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.mixing
 {
-	import com.kaltura.vo.KalturaMediaEntry;KalturaMediaEntry;;
+	import com.kaltura.vo.KalturaMediaEntry;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.mixing
 
 	public class MixingGetReadyMediaEntriesDelegate extends WebDelegateBase
 	{
+		KalturaMediaEntry;
+
 		public function MixingGetReadyMediaEntriesDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

@@ -35,7 +35,7 @@ package com.kaltura.delegates.liveStream
 	import com.kaltura.commands.liveStream.LiveStreamUpdateOfflineThumbnailJpeg;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

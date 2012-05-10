@@ -35,7 +35,7 @@ package com.kaltura.delegates.thumbAsset
 	import com.kaltura.commands.thumbAsset.ThumbAssetAddFromImage;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

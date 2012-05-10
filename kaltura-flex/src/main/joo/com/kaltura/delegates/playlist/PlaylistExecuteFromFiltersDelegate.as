@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.playlist
 {
-	import com.kaltura.vo.KalturaBaseEntry;KalturaBaseEntry;;
+	import com.kaltura.vo.KalturaBaseEntry;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.playlist
 
 	public class PlaylistExecuteFromFiltersDelegate extends WebDelegateBase
 	{
+		KalturaBaseEntry;
+
 		public function PlaylistExecuteFromFiltersDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

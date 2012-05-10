@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.baseEntry
 {
-	import com.kaltura.vo.KalturaBaseEntry;KalturaBaseEntry;;
+	import com.kaltura.vo.KalturaBaseEntry;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.baseEntry
 
 	public class BaseEntryGetByIdsDelegate extends WebDelegateBase
 	{
+		KalturaBaseEntry;
+
 		public function BaseEntryGetByIdsDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

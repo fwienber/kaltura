@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.report
 {
-	import com.kaltura.vo.KalturaReportGraph;KalturaReportGraph;;
+	import com.kaltura.vo.KalturaReportGraph;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.report
 
 	public class ReportGetGraphsDelegate extends WebDelegateBase
 	{
+		KalturaReportGraph;
+
 		public function ReportGetGraphsDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

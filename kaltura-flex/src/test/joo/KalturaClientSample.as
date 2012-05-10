@@ -25,7 +25,7 @@
 //
 // @ignore
 // ===================================================================================================
-﻿package {
+package {
 	import com.kaltura.KalturaClient;
 	import com.kaltura.commands.session.SessionStart;
 	import com.kaltura.config.KalturaConfig;

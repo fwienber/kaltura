@@ -35,7 +35,7 @@ package com.kaltura.delegates.annotation
 	import com.kaltura.commands.annotation.AnnotationAddFromBulk;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

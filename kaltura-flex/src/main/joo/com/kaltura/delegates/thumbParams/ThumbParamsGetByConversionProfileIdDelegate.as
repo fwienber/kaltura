@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.thumbParams
 {
-	import com.kaltura.vo.KalturaThumbParams;KalturaThumbParams;;
+	import com.kaltura.vo.KalturaThumbParams;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.thumbParams
 
 	public class ThumbParamsGetByConversionProfileIdDelegate extends WebDelegateBase
 	{
+		KalturaThumbParams;
+
 		public function ThumbParamsGetByConversionProfileIdDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

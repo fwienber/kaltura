@@ -35,7 +35,7 @@ package com.kaltura.delegates.metadata
 	import com.kaltura.commands.metadata.MetadataAddFromFile;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

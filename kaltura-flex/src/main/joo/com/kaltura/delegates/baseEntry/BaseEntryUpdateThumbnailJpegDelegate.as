@@ -35,7 +35,7 @@ package com.kaltura.delegates.baseEntry
 	import com.kaltura.commands.baseEntry.BaseEntryUpdateThumbnailJpeg;
 
 	import ru.inspirit.net.MultipartURLLoader;
-	import mx.utils.UIDUtil;
+	import flash.utils.UIDUtil;
 
 	import flash.events.DataEvent;
 	import flash.events.Event;

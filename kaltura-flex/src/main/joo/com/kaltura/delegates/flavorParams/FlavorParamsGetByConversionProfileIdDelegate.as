@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.flavorParams
 {
-	import com.kaltura.vo.KalturaFlavorParams;KalturaFlavorParams;;
+	import com.kaltura.vo.KalturaFlavorParams;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.flavorParams
 
 	public class FlavorParamsGetByConversionProfileIdDelegate extends WebDelegateBase
 	{
+		KalturaFlavorParams;
+
 		public function FlavorParamsGetByConversionProfileIdDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);

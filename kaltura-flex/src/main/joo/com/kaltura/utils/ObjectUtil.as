@@ -57,7 +57,7 @@ package com.kaltura.utils
 			var arr : Array = new Array();
 			var classInfo:XML = describeType(obj);
 			// don't take keys defined in ObjectProxy (i.e., uid)
-			var accessors:XMLList = classInfo..accessor.(@declaredBy != "mx.utils::ObjectProxy"); 
+			var accessors:XMLList = classInfo.accessor; //.(@declaredBy != "mx.utils::ObjectProxy"); 
 			for each (var v:XML in accessors) {
 				arr.push( v.@name.toString() );
 			}
@@ -100,7 +100,7 @@ package com.kaltura.utils
 		{
 			var arr : Array = new Array();
 			var classInfo:XML = describeType(obj);
-			for each (var v:XML in classInfo..variable) 
+			for each (var v:XML in classInfo.variable) 
 			arr.push( obj[v.@name] );
 			
 			return arr;
@@ -175,12 +175,12 @@ package com.kaltura.utils
 			
 			var classInfo:XML = describeType(obj);
 			//map all variables
-			for each (var v:XML in classInfo..variable) 
+			for each (var v:XML in classInfo.variable) 
 			{
 				ob[v.@name] = obj[v.@name];
 			}
 			//map all properties
-			for each (var a:XML in classInfo..accessor) 
+			for each (var a:XML in classInfo.accessor) 
 			{
 				ob[a.@name] = obj[a.@name];
 			} 

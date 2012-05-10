@@ -27,7 +27,7 @@
 // ===================================================================================================
 package com.kaltura.delegates.thumbAsset
 {
-	import com.kaltura.vo.KalturaThumbAsset;KalturaThumbAsset;;
+	import com.kaltura.vo.KalturaThumbAsset;
 
 	import com.kaltura.core.KClassFactory;
 
@@ -38,6 +38,8 @@ package com.kaltura.delegates.thumbAsset
 
 	public class ThumbAssetGetByEntryIdDelegate extends WebDelegateBase
 	{
+		KalturaThumbAsset;
+
 		public function ThumbAssetGetByEntryIdDelegate(call:KalturaCall, config:KalturaConfig)
 		{
 			super(call, config);
