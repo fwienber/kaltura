@@ -32,13 +32,17 @@ package {
 	import com.kaltura.events.KalturaEvent;
 	import com.kaltura.types.KalturaSessionType;
 	
-	import flash.display.Sprite;
 
-	public class KalturaClientSample extends Sprite
+	public class KalturaClientSample
 	{
 		private const API_SECRET = "";
 		private const KALTURA_PARTNER_ID = "";
 		
+		// use Jangaroo main method instead of extending Sprite:
+		public static function main():void {
+			new KalturaClientSample();
+		}
+
 		public function KalturaClientSample()
 		{
 			if (API_SECRET == "ENTER_YOUR_API_SECRET_KEY" ||
@@ -47,8 +51,9 @@ package {
 				return;
 			}
 			var configuration : KalturaConfig = new KalturaConfig();
+			configuration.domain = "localhost"; // needs a proxy from localhost/api_v3 to www.kaltura.com/api_v3
 			var kaltura : KalturaClient = new KalturaClient( configuration );	
-			var startSession : SessionStart = new SessionStart(API_SECRET, 'testUserName', KalturaSessionType.USER, KALTURA_PARTNER_ID);
+			var startSession : SessionStart = new SessionStart(API_SECRET, 'testUserName', KalturaSessionType.USER, int(KALTURA_PARTNER_ID));
 			startSession.addEventListener(KalturaEvent.COMPLETE, completed);
 			startSession.addEventListener(KalturaEvent.FAILED, failed);
 			kaltura.post( startSession );
