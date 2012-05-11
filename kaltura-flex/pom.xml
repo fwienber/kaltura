@@ -6,40 +6,10 @@
   <version>3.1.4-alpha-1-SNAPSHOT</version>
   <packaging>jangaroo</packaging>
 
-  <name>Kaltura</name>
+  <name>kaltura-flex</name>
   <description>
     Kaltura Flex 3.5 client library
   </description>
-
-  <scm>
-    <connection>scm:git:git://github.com/fwienber/kaltura-flex.git</connection>
-    <developerConnection>scm:git:git@github.com:fwienber/kaltura-flex.git</developerConnection>
-    <url>https://github.com/fwienber/kaltura-flex</url>
-  </scm>
-
-  <distributionManagement>
-    <downloadUrl>http://repo.jangaroo.net/maven2</downloadUrl>
-    <repository>
-      <id>jangaroo</id>
-      <name>Jangaroo repository</name>
-      <url>scp://repo.jangaroo.net/home/jangaroo/maven2/repo</url>
-    </repository>
-    <snapshotRepository>
-      <id>jangaroo-snapshots</id>
-      <url>scp://repo.jangaroo.net/home/jangaroo/maven2/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
-  <developers>
-    <developer>
-      <name>Frank Wienberg</name>
-      <organization>Jangaroo</organization>
-      <organizationUrl>http://www.jangaroo.net</organizationUrl>
-      <roles>
-        <role>jangarooificator</role>
-      </roles>
-    </developer>
-  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -100,6 +70,13 @@
   </build>
 
   <dependencies>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>jangaroo-runtime</artifactId>
+      <version>${jangaroo_version}</version>
+      <type>jangaroo</type>
+    </dependency>
+
     <dependency>
       <groupId>net.jangaroo</groupId>
       <artifactId>jooflash</artifactId>
